@@ -1,23 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Simple To Do List</title>
+    <title>Grid Food Menu</title>
     <!--Google Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <!--Font Awesome CDN-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <!--Stylesheet-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div class="container">
-        <div id="newtask">
-            <input type="text" placeholder="task to be done..">
-            <button id="push">ADD</button> 
+    <div class="menu">
+        <div class="heading">
+            <h1>ジュンスのソウルフード</h1>
+            <h3>&mdash; MENU &mdash; </h3>
         </div>
-        <div id="tasks"></div>
-    <!--Script-->
-    <script src="script.js"></script>
+        <div class="food-items">
+            <img src="마라탕.png">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>マーラータン</h5>      
+                    <h5 class="price"> $10 </h5>        
+                </div>
+                    <p>中国四川を基盤に東北地方を経て
+                        作られた中華料理である。</p>
+                    <button>Add To Cart</button>
+                </div>
+        </div>
+
+        <div class="food-items">
+            <img src="랜디스.png">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>ランディスドーナツ</h5>      
+                    <h5 class="price"> $2.5 </h5>        
+                </div>
+                    <p>52年に米カリフォルニア州で初めてスタートし</p>
+                    <button>Add To Cart</button>
+                </div>
+        </div>
+    </div>
+
+    <div class="food-items">
+        <img src="다운타우너.png">
+        <div class="details">
+            <div class="details-sub">
+                <h5>ダウン·タウナー</h5>      
+                <h5 class="price"> $6 </h5>        
+            </div>
+                <p>パティを焼いた後、様々な副材料とパンの間に挟んで食べる料理である。</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="food-items">
+        <img src="돌체콜드브류.png">
+        <div class="details">
+            <div class="details-sub">
+                <h5>ドルチェラテ</h5>      
+                <h5 class="price"> $7 </h5>        
+            </div>
+                <p> チェラテは練乳と牛乳、エスプレッソショットの組み合わせで仕上がる飲み物だ。</p>
+                <button>Add To Cart</button>
+            </div>
+    </div>
+</div>
+
+<div class="food-items">
+    <img src="피자스쿨.png">
+    <div class="details">
+        <div class="details-sub">
+            <h5>ピザスクール</h5>      
+            <h5 class="price"> $12 </h5>        
+        </div>
+            <p> ピザスクールの成功後、ピザマル、59米ピザなどの低価格ピザ専門ブランドが登場した。。</p>
+            <button>Add To Cart</button>
+        </div>
+</div>
+</div>
+
+<div class="food-items">
+    <img src="클랩피자.png">
+    <div class="details">
+        <div class="details-sub">
+            <h5>クラップピザ</h5>      
+            <h5 class="price"> $15 </h5>        
+        </div>
+            <p> ピザ発祥の地であり、元祖ともいえる南イタリアのナポリ風ピザ</p>
+            <button>Add To Cart</button>
+        </div>
+</div>
+</div>
+    </div>
 </body>
 </html>
