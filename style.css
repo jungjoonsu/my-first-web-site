@@ -1,83 +1,79 @@
+@font-face {
+    font-family: abster;
+    src: url(font/abster-webfont.woff) format('woff');
+}
 *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    background-color: #f3f3f3;
-    font-family: 'Ppopins',sans-serif;
-}
-.menu{
-    padding: 0 10px 30px 10px;
-    display:grid;
-    grid-template-columns: repeat( auto-fit, mimax (350px , 1fr));
-    grid-gap:20px 40px ;
-}
-.heading{
-    background-color: #cb202d;
-    color: #ffffff;
-    margin-bottom: 30px;
-    padding: 30px 0;
-    grid-column: 1/-1;
-    text-align: center;
-}
-.heading>h1{
- font-weight: 400;
- font-size: 30px; 
- letter-spacing: 10px; 
- margin-bottom: 10px;
-}
-.heading>h3{
-    font-weight: 600;
-    font-size: 22px;
-    letter-spacing: 5px;
-}
-.food-items{
-    display: grid;
-    position: relative;
-    grid-template-rows: auto 1fr;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-}
-.food-items img{
-    position: relative;
+.container{
     width: 100%;
-    border-radius: 15px 15px 0 0;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/apple.png);
+    background-size: corver;
+    background-position: center;
 }
-h1{
-    grid-column: 1/-1;
-    text-align: center;
+.container .header{
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.details{
-    padding: 20px 10px;
-    display: grid;
-    grid-template-rows: auto 1fr 50px;
-    grid-row-gap: 15px;
-}
-.details-sub{
+.container .header h1 a{
+    text-decoration: none;
+    color: white;
     
-    grid-template-columns: auto auto;
 }
-.details0sub>h5{
-    font-weight: 600;
-    font-size: 18px;
+.container .nav ul li{
+    display: inline-block;
+    margin: 0 50px;
 }
-.price{
-    text-align: right;
+.container .nav ul li a{
+    text-decoration: none;
+    color: white;
 }
-.details>p{
-        color:#6f6f6f;
-        font-size: 15px;
-        line-height: 28px;
-        font-weight: 400;
-        align-self: stretch;
+.container .nav ul li a:hover{
+ color: #1fdfdf;  
 }
-.details>button{
-    background-color: #cb202d;
-    border: none;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 5px;
-    width: 180px;
+.container .hero{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: whitesmoke;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container .hero h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.container .hero h6{
+    font-size: 10px;
+}
+.container .hero p{
+    font-size: 22px;
+}
+.container .hero button{
+    background: none;
+    border: 2px solid darkseagreen;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+.container .hero button:hover{
+    background-color: darkslategray;
+}
+I{
+    margin:20px;
+    left: 50%;
+    top: 50%;
+    
 }
